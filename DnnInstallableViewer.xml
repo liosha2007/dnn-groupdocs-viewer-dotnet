@@ -4,16 +4,6 @@
         <name>DnnInstallableViewer</name>
     </assembly>
     <members>
-        <member name="T:DotNetNuke.Modules.DnnInstallableViewer.DnnInstallableViewerModuleBase">
-            <summary>
-            This base class can be used to define custom properties for multiple controls. 
-            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
-            
-            Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
-            are accessible to your module's controls (that inherity from DnnInstallableViewerModuleBase
-            
-            </summary>
-        </member>
         <member name="T:DotNetNuke.Modules.DnnInstallableViewer.Settings">
             -----------------------------------------------------------------------------
             <summary>
@@ -35,16 +25,6 @@
             defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
             </summary>
             -----------------------------------------------------------------------------
-        </member>
-        <member name="T:DotNetNuke.Modules.DnnInstallableViewer.DnnInstallableViewerSettingsBase">
-            <summary>
-            This base class can be used to define custom properties for multiple controls. 
-            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
-            
-            Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
-            are accessible to your module's controls (that inherity from DnnInstallableViewerSettingsBase
-            
-            </summary>
         </member>
         <member name="M:DotNetNuke.Modules.DnnInstallableViewer.Settings.LoadSettings">
             -----------------------------------------------------------------------------
@@ -72,6 +52,60 @@
         <member name="F:DotNetNuke.Modules.DnnInstallableViewer.Settings.txtUrl">
             <summary>
             txtUrl элемент управления.
+            </summary>
+            <remarks>
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.DnnInstallableViewer.Settings.lblWidth">
+            <summary>
+            lblWidth элемент управления.
+            </summary>
+            <remarks>
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.DnnInstallableViewer.Settings.txtWidth">
+            <summary>
+            txtWidth элемент управления.
+            </summary>
+            <remarks>
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.DnnInstallableViewer.Settings.lblHeight">
+            <summary>
+            lblHeight элемент управления.
+            </summary>
+            <remarks>
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.DnnInstallableViewer.Settings.txtHeight">
+            <summary>
+            txtHeight элемент управления.
+            </summary>
+            <remarks>
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.DnnInstallableViewer.Settings.lblDefaultFileName">
+            <summary>
+            lblDefaultFileName элемент управления.
+            </summary>
+            <remarks>
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.DnnInstallableViewer.Settings.txtDefaultFileName">
+            <summary>
+            txtDefaultFileName элемент управления.
             </summary>
             <remarks>
             Автоматически создаваемое поле.
@@ -172,6 +206,33 @@
         <member name="F:DotNetNuke.Modules.DnnInstallableViewer.View.URL">
             <summary>
             URL элемент управления.
+            </summary>
+            <remarks>
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.DnnInstallableViewer.View.Width">
+            <summary>
+            Width элемент управления.
+            </summary>
+            <remarks>
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.DnnInstallableViewer.View.Height">
+            <summary>
+            Height элемент управления.
+            </summary>
+            <remarks>
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.DnnInstallableViewer.View.DefaultFileName">
+            <summary>
+            DefaultFileName элемент управления.
             </summary>
             <remarks>
             Автоматически создаваемое поле.

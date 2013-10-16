@@ -30,7 +30,7 @@ namespace DotNetNuke.Modules.DnnInstallableViewer
     /// 
     /// </summary>
     /// -----------------------------------------------------------------------------
-    public partial class Edit : DnnInstallableViewerModuleBase
+    public partial class Edit : PortalModuleBase
     {
 
         #region Event Handlers

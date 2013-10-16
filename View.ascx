@@ -1,7 +1,12 @@
 <%@ Control language="C#" Inherits="DotNetNuke.Modules.DnnInstallableViewer.View" AutoEventWireup="false"  Codebehind="View.ascx.cs" %>
 
 <asp:HiddenField runat="server" ID="URL" />
+<asp:HiddenField runat="server" ID="Width" Value="800" />
+<asp:HiddenField runat="server" ID="Height" Value="600" />
+<asp:HiddenField runat="server" ID="DefaultFileName" />
 
+<% if (URL.Value != null && URL.Value.Length > 0)
+   { %>
 <!-- <script type='text/javascript' src='<%= URL.Value %>/document-viewer/GetScriptHandler?name=libs/jquery-1.9.1.min.js'></script> -->
 <!-- <script type='text/javascript' src='<%= URL.Value %>/document-viewer/GetScriptHandler?name=libs/jquery-ui-1.10.3.min.js'></script> -->
 <script type='text/javascript' src='<%= URL.Value %>/document-viewer/GetScriptHandler?name=libs/knockout-2.2.1.js'></script>
@@ -28,7 +33,7 @@
         var localizedStrings = null;
         var thumbsImageBase64Encoded = null;
         $('#viewer').groupdocsViewer({
-            filePath: 'candy.pdf',
+            filePath: '<%= DefaultFileName.Value %>',
             docViewerId: 'doc_viewer1',
             quality: 100,
             showThumbnails: true,
@@ -36,8 +41,8 @@
             initialZoom: 100,
             zoomToFitWidth: true,
             zoomToFitHeight: false,
-            width: 1000,
-            height: 500,
+            width: <%= Width.Value %>,
+            height: <%= Height.Value %>,
             backgroundColor: '',
             showFolderBrowser: true,
             showPrint: true,
@@ -65,5 +70,6 @@
         });
     });
 </script> 
+<% } %>
 
 <div id="viewer"></div>

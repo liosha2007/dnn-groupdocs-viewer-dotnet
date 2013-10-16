@@ -38,7 +38,7 @@ namespace DotNetNuke.Modules.DnnInstallableViewer
     /// defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
     /// </summary>
     /// -----------------------------------------------------------------------------
-    public partial class Settings : DnnInstallableViewerSettingsBase
+    public partial class Settings : ModuleSettingsBase
     {
 
         #region Base Method Implementations
@@ -57,6 +57,18 @@ namespace DotNetNuke.Modules.DnnInstallableViewer
                     if (Settings.Contains("URL"))
                     {
                         txtUrl.Text = Settings["URL"].ToString();
+                    }
+                    if (Settings.Contains("Width"))
+                    {
+                        txtWidth.Text = Settings["Width"].ToString();
+                    }
+                    if (Settings.Contains("Height"))
+                    {
+                        txtHeight.Text = Settings["Height"].ToString();
+                    }
+                    if (Settings.Contains("DefaultFileName"))
+                    {
+                        txtDefaultFileName.Text = Settings["DefaultFileName"].ToString();
                     }
                 }
             }
@@ -80,6 +92,9 @@ namespace DotNetNuke.Modules.DnnInstallableViewer
                 //the following are two sample Module Settings, using the text boxes that are commented out in the ASCX file.
                 //module settings
                 modules.UpdateModuleSetting(ModuleId, "URL", txtUrl.Text);
+                modules.UpdateModuleSetting(ModuleId, "Width", txtWidth.Text);
+                modules.UpdateModuleSetting(ModuleId, "Height", txtHeight.Text);
+                modules.UpdateModuleSetting(ModuleId, "DefaultFileName", txtDefaultFileName.Text);
             }
             catch (Exception exc) //Module failed to load
             {

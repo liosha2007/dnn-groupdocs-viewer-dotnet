@@ -35,7 +35,7 @@ namespace DotNetNuke.Modules.DnnInstallableViewer
     /// 
     /// </summary>
     /// -----------------------------------------------------------------------------
-    public partial class View : DnnInstallableViewerModuleBase, IActionable
+    public partial class View : ModuleSettingsBase, IActionable
     {
 
         #region Event Handlers
@@ -64,6 +64,18 @@ namespace DotNetNuke.Modules.DnnInstallableViewer
                 if (Settings.Contains("URL"))
                 {
                     URL.Value = String.Format("{0}", Settings["URL"]);
+                }
+                if (Settings.Contains("Width"))
+                {
+                    Width.Value = String.Format("{0}", Settings["Width"]);
+                }
+                if (Settings.Contains("Height"))
+                {
+                    Height.Value = String.Format("{0}", Settings["Height"]);
+                }
+                if (Settings.Contains("DefaultFileName"))
+                {
+                    DefaultFileName.Value = String.Format("{0}", Settings["DefaultFileName"]);
                 }
             }
             catch (Exception exc) //Module failed to load
