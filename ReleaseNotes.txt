@@ -1,4 +1,4 @@
-﻿<h3>ViewerNet</h3>
+﻿<h3>DnnInstallableViewer</h3>
 <p class="Contributor">
 	Groupdocs <br />
 	<a href="mailto:support@groupdocs.com">support@groupdocs.com</a><br />
@@ -6,7 +6,7 @@
 </p>
 <hr/>
 <div class="License">
-	<h3>About the ViewerNet</h3>
+	<h3>About the DnnInstallableViewer</h3>
 	<p class="Owner">
 		<b>Version CHANGEME</b><br /><br />
 	</p>

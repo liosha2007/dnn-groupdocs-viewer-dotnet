@@ -14,23 +14,23 @@
     </file>
     <file>
       <path />
-      <name>ViewerNet.csproj</name>
+      <name>DnnInstallableViewer.csproj</name>
     </file>
     <file>
       <path />
-      <name>ViewerNet.sln</name>
+      <name>DnnInstallableViewer.sln</name>
     </file>
     <file>
       <path />
-      <name>ViewerNet.xml</name>
+      <name>DnnInstallableViewer.xml</name>
     </file>
     <file>
       <path />
-      <name>ViewerNetModuleBase.cs</name>
+      <name>DnnInstallableViewerModuleBase.cs</name>
     </file>
     <file>
       <path />
-      <name>ViewerNetSettingsBase.cs</name>
+      <name>DnnInstallableViewerSettingsBase.cs</name>
     </file>
     <file>
       <path />

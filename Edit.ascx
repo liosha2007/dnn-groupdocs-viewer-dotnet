@@ -1,4 +1,4 @@
-<%@ Control language="C#" Inherits="DotNetNuke.Modules.ViewerNet.Edit" AutoEventWireup="false"  Codebehind="Edit.ascx.cs" %>
+<%@ Control language="C#" Inherits="DotNetNuke.Modules.DnnInstallableViewer.Edit" AutoEventWireup="false"  Codebehind="Edit.ascx.cs" %>
 
 <fieldset class="dnnForm">
     <b>Server URL have to be configured in Settings tab.</b><br /><br />

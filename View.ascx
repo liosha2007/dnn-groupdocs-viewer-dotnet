@@ -1,4 +1,4 @@
-<%@ Control language="C#" Inherits="DotNetNuke.Modules.ViewerNet.View" AutoEventWireup="false"  Codebehind="View.ascx.cs" %>
+<%@ Control language="C#" Inherits="DotNetNuke.Modules.DnnInstallableViewer.View" AutoEventWireup="false"  Codebehind="View.ascx.cs" %>
 
 <asp:HiddenField runat="server" ID="URL" />
 

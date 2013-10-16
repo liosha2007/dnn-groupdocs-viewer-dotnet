@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewerNet", "ViewerNet.csproj", "{2B235259-7D51-41DF-814A-9C377F66412A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DnnInstallableViewer", "DnnInstallableViewer.csproj", "{2B235259-7D51-41DF-814A-9C377F66412A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{05643A83-E225-4411-82CD-3BA8D817286E}"
 	ProjectSection(SolutionItems) = preProject

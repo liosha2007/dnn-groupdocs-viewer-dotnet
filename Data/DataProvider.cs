@@ -16,7 +16,7 @@ using DotNetNuke.Common.Utilities;
 using DotNetNuke.Framework.Providers;
 
 
-namespace DotNetNuke.Modules.ViewerNet.Data
+namespace DotNetNuke.Modules.DnnInstallableViewer.Data
 {
 
     /// -----------------------------------------------------------------------------
@@ -39,7 +39,7 @@ namespace DotNetNuke.Modules.ViewerNet.Data
         {
             if (provider == null)
             {
-                const string assembly = "DotNetNuke.Modules.ViewerNet.Data.SqlDataprovider,ViewerNet";
+                const string assembly = "DotNetNuke.Modules.DnnInstallableViewer.Data.SqlDataprovider,DnnInstallableViewer";
                 Type objectType = Type.GetType(assembly, true, true);
 
                 provider = (DataProvider)Activator.CreateInstance(objectType);

@@ -1,5 +1,5 @@
 /*
-' Copyright (c) 2012 Groupdocs
+' Copyright (c) 2012  Groupdocs
 '  All rights reserved.
 ' 
 ' THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
@@ -10,19 +10,24 @@
 ' 
 */
 
-namespace DotNetNuke.Modules.ViewerNet
+using DotNetNuke.Entities.Modules;
+
+namespace DotNetNuke.Modules.DnnInstallableViewer
 {
 
     /// <summary>
     /// This base class can be used to define custom properties for multiple controls. 
     /// An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
     /// 
-    /// Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
-    /// are accessible to your module's controls (that inherity from ViewerNetModuleBase
+    /// Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+    /// are accessible to your module's controls (that inherity from DnnInstallableViewerSettingsBase
     /// 
     /// </summary>
 
-    public class ViewerNetModuleBase : DotNetNuke.Entities.Modules.PortalModuleBase
+
+    public class DnnInstallableViewerSettingsBase : ModuleSettingsBase
     {
+
     }
+
 }

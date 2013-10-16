@@ -15,22 +15,22 @@ using DotNetNuke.Services.Exceptions;
 using DotNetNuke.Entities.Modules;
 using DotNetNuke.Common;
 
-namespace DotNetNuke.Modules.ViewerNet
+namespace DotNetNuke.Modules.DnnInstallableViewer
 {
 
     /// -----------------------------------------------------------------------------
     /// <summary>
-    /// The EditViewerNet class is used to manage content
+    /// The EditDnnInstallableViewer class is used to manage content
     /// 
     /// Typically your edit control would be used to create new content, or edit existing content within your module.
     /// The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
     /// 
-    /// Because the control inherits from ViewerNetModuleBase you have access to any custom properties
+    /// Because the control inherits from DnnInstallableViewerModuleBase you have access to any custom properties
     /// defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
     /// 
     /// </summary>
     /// -----------------------------------------------------------------------------
-    public partial class Edit : ViewerNetModuleBase
+    public partial class Edit : DnnInstallableViewerModuleBase
     {
 
         #region Event Handlers

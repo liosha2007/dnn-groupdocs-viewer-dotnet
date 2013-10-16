@@ -15,12 +15,12 @@ using System.Collections.Generic;
 using DotNetNuke.Entities.Modules;
 using DotNetNuke.Services.Search;
 
-namespace DotNetNuke.Modules.ViewerNet.Components
+namespace DotNetNuke.Modules.DnnInstallableViewer.Components
 {
 
     /// -----------------------------------------------------------------------------
     /// <summary>
-    /// The Controller class for ViewerNet
+    /// The Controller class for DnnInstallableViewer
     /// 
     /// The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
     /// DotNetNuke will poll this class to find out which Interfaces the class implements. 
@@ -53,18 +53,18 @@ namespace DotNetNuke.Modules.ViewerNet.Components
         //{
         //string strXML = "";
 
-        //List<ViewerNet> colViewerNets = GetViewerNets(ModuleID);
-        //if (colViewerNets.Count != 0)
+        //List<DnnInstallableViewer> colDnnInstallableViewers = GetDnnInstallableViewers(ModuleID);
+        //if (colDnnInstallableViewers.Count != 0)
         //{
-        //    strXML += "<ViewerNets>";
+        //    strXML += "<DnnInstallableViewers>";
 
-        //    foreach (ViewerNet objViewerNet in colViewerNets)
+        //    foreach (DnnInstallableViewer objDnnInstallableViewer in colDnnInstallableViewers)
         //    {
-        //        strXML += "<ViewerNet>";
-        //        strXML += "<content>" + DotNetNuke.Common.Utilities.XmlUtils.XMLEncode(objViewerNet.Content) + "</content>";
-        //        strXML += "</ViewerNet>";
+        //        strXML += "<DnnInstallableViewer>";
+        //        strXML += "<content>" + DotNetNuke.Common.Utilities.XmlUtils.XMLEncode(objDnnInstallableViewer.Content) + "</content>";
+        //        strXML += "</DnnInstallableViewer>";
         //    }
-        //    strXML += "</ViewerNets>";
+        //    strXML += "</DnnInstallableViewers>";
         //}
 
         //return strXML;
@@ -83,14 +83,14 @@ namespace DotNetNuke.Modules.ViewerNet.Components
         /// -----------------------------------------------------------------------------
         //public void ImportModule(int ModuleID, string Content, string Version, int UserID)
         //{
-        //XmlNode xmlViewerNets = DotNetNuke.Common.Globals.GetContent(Content, "ViewerNets");
-        //foreach (XmlNode xmlViewerNet in xmlViewerNets.SelectNodes("ViewerNet"))
+        //XmlNode xmlDnnInstallableViewers = DotNetNuke.Common.Globals.GetContent(Content, "DnnInstallableViewers");
+        //foreach (XmlNode xmlDnnInstallableViewer in xmlDnnInstallableViewers.SelectNodes("DnnInstallableViewer"))
         //{
-        //    ViewerNetInfo objViewerNet = new ViewerNetInfo();
-        //    objViewerNet.ModuleId = ModuleID;
-        //    objViewerNet.Content = xmlViewerNet.SelectSingleNode("content").InnerText;
-        //    objViewerNet.CreatedByUser = UserID;
-        //    AddViewerNet(objViewerNet);
+        //    DnnInstallableViewerInfo objDnnInstallableViewer = new DnnInstallableViewerInfo();
+        //    objDnnInstallableViewer.ModuleId = ModuleID;
+        //    objDnnInstallableViewer.Content = xmlDnnInstallableViewer.SelectSingleNode("content").InnerText;
+        //    objDnnInstallableViewer.CreatedByUser = UserID;
+        //    AddDnnInstallableViewer(objDnnInstallableViewer);
         //}
 
         //	throw new System.NotImplementedException("The method or operation is not implemented.");
@@ -106,11 +106,11 @@ namespace DotNetNuke.Modules.ViewerNet.Components
         //{
         //SearchItemInfoCollection SearchItemCollection = new SearchItemInfoCollection();
 
-        //List<ViewerNetInfo> colViewerNets = GetViewerNets(ModInfo.ModuleID);
+        //List<DnnInstallableViewerInfo> colDnnInstallableViewers = GetDnnInstallableViewers(ModInfo.ModuleID);
 
-        //foreach (ViewerNetInfo objViewerNet in colViewerNets)
+        //foreach (DnnInstallableViewerInfo objDnnInstallableViewer in colDnnInstallableViewers)
         //{
-        //    SearchItemInfo SearchItem = new SearchItemInfo(ModInfo.ModuleTitle, objViewerNet.Content, objViewerNet.CreatedByUser, objViewerNet.CreatedDate, ModInfo.ModuleID, objViewerNet.ItemId.ToString(), objViewerNet.Content, "ItemId=" + objViewerNet.ItemId.ToString());
+        //    SearchItemInfo SearchItem = new SearchItemInfo(ModInfo.ModuleTitle, objDnnInstallableViewer.Content, objDnnInstallableViewer.CreatedByUser, objDnnInstallableViewer.CreatedDate, ModInfo.ModuleID, objDnnInstallableViewer.ItemId.ToString(), objDnnInstallableViewer.Content, "ItemId=" + objDnnInstallableViewer.ItemId.ToString());
         //    SearchItemCollection.Add(SearchItem);
         //}
 

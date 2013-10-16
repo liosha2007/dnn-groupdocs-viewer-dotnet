@@ -7,7 +7,7 @@
 // </автоматически создаваемое>
 //------------------------------------------------------------------------------
 
-namespace DotNetNuke.Modules.ViewerNet {
+namespace DotNetNuke.Modules.DnnInstallableViewer {
     
     
     public partial class Settings {

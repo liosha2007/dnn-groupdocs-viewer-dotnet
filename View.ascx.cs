@@ -16,10 +16,10 @@ using DotNetNuke.Entities.Modules;
 using DotNetNuke.Entities.Modules.Actions;
 using DotNetNuke.Services.Localization;
 using DotNetNuke.Security;
-using DotNetNuke.Modules.ViewerNet;
+using DotNetNuke.Modules.DnnInstallableViewer;
 
 
-namespace DotNetNuke.Modules.ViewerNet
+namespace DotNetNuke.Modules.DnnInstallableViewer
 {
 
     /// -----------------------------------------------------------------------------
@@ -30,12 +30,12 @@ namespace DotNetNuke.Modules.ViewerNet
     /// 
     /// View may be the only control you have in your project depending on the complexity of your module
     /// 
-    /// Because the control inherits from ViewerNetModuleBase you have access to any custom properties
+    /// Because the control inherits from DnnInstallableViewerModuleBase you have access to any custom properties
     /// defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
     /// 
     /// </summary>
     /// -----------------------------------------------------------------------------
-    public partial class View : ViewerNetModuleBase, IActionable
+    public partial class View : DnnInstallableViewerModuleBase, IActionable
     {
 
         #region Event Handlers

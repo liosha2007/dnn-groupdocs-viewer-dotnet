@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 //
-[assembly: AssemblyTitle("GroupDocsViewerNet")]
+[assembly: AssemblyTitle("GroupDocsDnnInstallableViewer")]
 [assembly: AssemblyDescription("A DotNetNuke Module from GroupDocs")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]

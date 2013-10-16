@@ -15,7 +15,7 @@ using DotNetNuke.Services.Exceptions;
 using DotNetNuke.Entities.Modules;
 
 
-namespace DotNetNuke.Modules.ViewerNet
+namespace DotNetNuke.Modules.DnnInstallableViewer
 {
 
     /// -----------------------------------------------------------------------------
@@ -34,11 +34,11 @@ namespace DotNetNuke.Modules.ViewerNet
     /// 
     /// Below we have some examples of how to access these settings but you will need to uncomment to use.
     /// 
-    /// Because the control inherits from ViewerNetSettingsBase you have access to any custom properties
+    /// Because the control inherits from DnnInstallableViewerSettingsBase you have access to any custom properties
     /// defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
     /// </summary>
     /// -----------------------------------------------------------------------------
-    public partial class Settings : ViewerNetSettingsBase
+    public partial class Settings : DnnInstallableViewerSettingsBase
     {
 
         #region Base Method Implementations
